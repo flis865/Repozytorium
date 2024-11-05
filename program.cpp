@@ -11,6 +11,9 @@ int factorial(int n){
 int main(){
 	int n;
 	cin>>n;
-	cout<<factorial(n)<<endl;
+	if(n<0)
+		cout<<"Podana liczba jest nieujemna"<<endl;
+	else
+		cout<<factorial(n)<<endl;
 	return 0;
 }
